@@ -3,6 +3,26 @@
 <head>
     <meta charset="utf-8" />
     <title>5646宿舍官方网站</title>
+	<SCRIPT language=JavaScript>
+        function password() {
+            var testV = 1;
+            var pass1 = prompt('请输入密码:','');
+            while (testV < 3) {
+                if (!pass1)
+                    history.go(-1);
+                if (pass1 == "nytd5646") {
+                    alert('密码正确!');
+                    break;
+                }
+                testV+=-1;
+                var pass1 = prompt('密码错误!请重新输入(忘记密码请联系网站管理员）:');
+            }
+            if (pass1!="password" & testV ==3)
+                history.go(-1);
+            return " ";
+        }
+        document.write(password());
+	</SCRIPT>
 	<style type="text/css">
 		#name
 		{
