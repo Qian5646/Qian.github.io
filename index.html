@@ -2,34 +2,37 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title></title>
-    <script>
-        window.onload = function ()
-        {
-            var oBtn = document.getElementById("btn");
-            //var oFruit = document.getElementsByName("fruit");
-            oBtn.onclick = function ()
-            {
-                var oFruit = document.getElementsByName("fruit");
-                //使用for循环遍历所有的单选框
-                for(var i=0;i<oFruit.length;i++)
-                {
-                    //判断当前遍历的单选框是否选中（也就是checked是否为true）
-                    if(oFruit[i].checked)
-                    {
-                        alert(oFruit[i].value);
-                    }
-                }
-            };
-        }
-    </script>
+    <title>5646宿舍官方网站</title>
+	<style type="text/css">
+		#name
+		{
+			font-size: 50px;
+			font-weight: bold;
+			text-align: center;
+			color: red;
+			font-family: "华文行楷";
+			border-top: 5px solid red;
+			border-bottom: 5px solid blue;
+			border-left: 5px solid orange;
+			border-right: 5px solid green;
+		}
+		img
+		{
+			width:500px;
+			height:1000px;
+			float: left;
+			border:5px solid blue;
+		}
+		#f
+		{
+			font-family: "华文隶书";
+			font-size: 110px;
+		}
+	</style>
 </head>
 <body>
-<div>
-    <label><input type="radio" name="fruit" value="苹果" checked/>苹果</label>
-    <label><input type="radio" name="fruit" value="香蕉" />香蕉</label>
-    <label><input type="radio" name="fruit" value="西瓜" />西瓜</label>
-</div>
-<input id="btn" type="button" value="获取" />
+    <p id="name">5646宿舍官方网站欢迎您</p>
+    <img src="../img/1.jpg" alt="洛非美照,因为缺少服务器,所以加载不出来">
+	<p id="f">杨丰廷，男，19岁，未婚，乳名：“洛非”，爱好：“二次元”，平时喜欢赛博朋克发型，喜欢看腿,平时不抽烟不喝酒，无不良嗜好，纯情真男人，5646保护伞，泰州黑恶势力，至今单身，急需一位妹妹，释放自己。</p>
 </body>
 </html>
