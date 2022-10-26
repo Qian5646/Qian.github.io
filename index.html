@@ -190,6 +190,26 @@
 <script>
 	    alert("欢迎访问5646宿舍官网，本网站纯属娱乐，请勿认真！")
 </script>
+</script>
+<script type="text/javascript">
+    window.onload=function (){
+        document.onkeydown=function (){
+            var e=window.event||arguments[0];
+            if(e.keyCode==123){
+                return false;
+            }else if((e.ctrlKey)&&(e.shiftKey)&&(e.keyCode==73)){
+                return false;
+            }else if((e.shiftKey)&&(e.keyCode==121)){
+                return false;
+            }else if((e.ctrlKey)&&(e.keyCode==85)){
+                return false;
+            }
+        };
+        document.oncontextmenu=function (){
+            return false;
+        }
+    }
+</script>
     <p id="name">5646宿舍官方网站欢迎您</p>
     <img src="img1.jpg" alt="洛非美照,因为缺少服务器,所以加载不出来">
 	<p id="f">杨丰廷，男，19岁，未婚，乳名：“洛非”，爱好：“二次元”，平时喜欢赛博朋克发型，喜欢看腿,平时不抽烟不喝酒，无不良嗜好，纯情真男人，5646保护伞，泰州黑恶势力，至今单身，急需一位妹妹，释放自己。</p>
